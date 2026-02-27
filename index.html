@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Data Penjualan Pudding</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #050b18;
+            color: #e6f1ff;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #020617, #0a1f44);
+            border-bottom: 1px solid #0ff;
+        }
+
+        h1 {
+            color: #00e5ff;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(10, 25, 50, 0.6);
+            border: 1px solid #00e5ff33;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.08);
+        }
+
+        h2 {
+            color: #00e5ff;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+            border: 1px solid #00e5ff55;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .profile img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #00e5ff;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            margin: 5px 5px 0 0;
+            border-radius: 999px;
+            background: #00e5ff22;
+            border: 1px solid #00e5ff55;
+            font-size: 12px;
+        }
+
+        a {
+            color: #00e5ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📊 Analisis Data Penjualan Pudding</h1>
+    <p>Publikasi Web - Tugas Informatika (SH1)</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>📁 Deskripsi Dataset</h2>
+        <p>
+            Dataset yang digunakan merupakan data penjualan pudding selama 20 hari.
+            Data berisi tanggal penjualan, varian rasa, jumlah terjual, harga, dan total pendapatan.
+            Analisis dilakukan menggunakan Python di Google Colab dengan visualisasi grafik untuk
+            melihat tren penjualan dan performa setiap varian rasa.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>⚙️ Langkah Analisis Singkat</h2>
+        <p>
+            1. Mengimpor dataset CSV ke Google Colab.<br>
+            2. Membersihkan dan membaca data menggunakan Pandas.<br>
+            3. Membuat visualisasi grafik menggunakan Matplotlib.<br>
+            4. Menganalisis tren penjualan, varian terlaris, dan pendapatan harian.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>📈 Grafik 1: Penjualan Pudding per Hari</h2>
+        <img src="grafik1.png" alt="Grafik Penjualan">
+        <p>
+            Grafik menunjukkan tren jumlah penjualan pudding setiap hari.
+            Terlihat adanya peningkatan penjualan pada beberapa hari tertentu.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>📊 Grafik 2: Total Penjualan Berdasarkan Varian Rasa</h2>
+        <img src="grafik2.png" alt="Grafik Varian Rasa">
+        <p>
+            Grafik batang menunjukkan bahwa varian rasa Coklat menjadi
+            rasa yang paling laris dibandingkan varian lainnya.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>💰 Grafik 3: Pendapatan per Hari</h2>
+        <img src="grafik3.png" alt="Grafik Pendapatan">
+        <p>
+            Grafik ini menunjukkan perubahan total pendapatan harian
+            yang dipengaruhi oleh jumlah penjualan pudding.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🧠 Insight & Rekomendasi</h2>
+        <p>
+            Berdasarkan hasil analisis data, penjualan pudding mengalami
+            peningkatan pada hari-hari tertentu dengan varian Coklat sebagai
+            produk paling diminati. Rekomendasi: fokus produksi pada rasa
+            terlaris, meningkatkan promosi pada hari dengan penjualan rendah,
+            serta menambah inovasi varian rasa untuk menarik lebih banyak
+            konsumen siswa.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>👩‍💻 Profile Pembuat</h2>
+        <div class="profile">
+            <img src="foto-profil.jpg" alt="Foto Pembuat">
+            <div>
+                <p><strong>Nama:</strong> Annisa Shafira Yasmin</p>
+                <p><strong>Kelas:</strong> XII-3</p>
+                <p><strong>Project:</strong> Analisis Data Penjualan Pudding (SH1)</p>
+                <p><strong>Achievement:</strong></p>
+                <span class="badge">Juara Lomba Fotografi FLS2N</span>
+                <span class="badge">Kansas 2023 & Kansas 2024</span>
+                <span class="badge">Festival Fotografi Kartini</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🔗 Source Code & File Project</h2>
+        <p>
+            Link Repository GitHub:<br>
+            <a href="https://github.com/itsshapeAr10/Data-Analysis-Pudding" target="_blank">
+                https://github.com/itsshapeAr10/Data-Analysis-Pudding
+            </a>
+        </p>
+        <p>
+            Notebook Google Colab, dataset (data.csv), dan grafik tersedia
+            di repository sebagai bentuk transparansi analisis data.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
